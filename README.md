@@ -1,6 +1,6 @@
 # QueueDuino
 
-This libraries creates a queue list with Strings data, passed as argument to a user configured action. Recommend when you have to perform a current action later, like request a server. The list is also stored on the flash memory.
+This libraries creates a queue list with Strings data, passed as argument to a user configured action. Recommended when you have to perform a current action later, like request a server. The list is also stored on the flash memory.
 
 # Quick Start
 
