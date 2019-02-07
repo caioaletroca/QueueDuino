@@ -72,6 +72,11 @@ void QueueDuino::cancel() {
  * Configures and setups the queue system
  */
 void QueueDuino::setup() {
+	// Configure a placeholder action method
+	this->setAction([] (const String item) -> bool {
+		return true;
+	});
+
 	// Load previous saved data
 	this->load();
 }
