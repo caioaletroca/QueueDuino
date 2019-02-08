@@ -1,4 +1,4 @@
-# QueueDuino
+# QueueDuino &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 This libraries creates a queue list with Strings data, passed as argument to a user configured action. Recommended when you have to perform a current action later, like request a server. The list is also stored on the flash memory.
 
@@ -83,13 +83,29 @@ void loop()
 ```cpp
 void onSuccess( [] () -> void {} )
 ```
-> Receives a lambda function as argument. onSuccess event is fired when the entire queue was successful
+> Receives a lambda function as argument, or you can also defines a function separated. onSuccess event is fired when the entire queue was successful
+
+##### Example
+```cpp
+void callback() {
+  // do your stuff
+}
+queue.onSuccess(callback);
+```
 
 ### onFailed
 ```cpp
 void onFailed( [] () -> void {} )
 ```
-> Receives a lambda function as argument. onFailed event is fired when one item action failed
+> Receives a lambda function as argument, or you can also defines a function separated. onFailed event is fired when one item action failed
+
+##### Example
+```cpp
+void callback() {
+  // do your stuff
+}
+queue.onSuccess(callback);
+```
 
 ## Action Methods
 
@@ -126,4 +142,11 @@ void toSerial()
 ```
 > Prints the entire queue, line by line on the default Serial
 
+# Example
 
+Follow the simple setup to undestand how to use the queue [here]().
+
+# Extra Information
+
+It was only tested on NodeMCU, but may work on commom devices as Arduino Uno, Nano and Mega.
+Feel free to make pull request to improve this library as you want.
