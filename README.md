@@ -144,7 +144,7 @@ void toSerial()
 
 # Example
 
-Follow the simple setup to undestand how to use the queue [here]().
+Follow the simple setup to undestand how to use the queue [here](https://github.com/caioaletroca/QueueDuino/blob/master/Examples/SimpleExample/SimpleExample.ino).
 
 # Extra Information
 
