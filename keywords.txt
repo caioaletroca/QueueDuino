@@ -1,0 +1,35 @@
+#######################################
+# Syntax Coloring Map For QueueDuino
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+QueueDuino	KEYWORD1
+ActionMethod	KEYWORD1
+EventMethod	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+push	KEYWORD2
+pop	KEYWORD2
+clear	KEYWORD2
+run	KEYWORD2
+cancel	KEYWORD2
+setup	KEYWORD2
+loop	KEYWORD2
+onFailed	KEYWORD2
+onSuccess	KEYWORD2
+setAction	KEYWORD2
+runAction	KEYWORD2
+save	KEYWORD2
+load	KEYWORD2
+toSerial	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+#	LITERAL1
