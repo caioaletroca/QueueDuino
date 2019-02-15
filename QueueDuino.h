@@ -37,6 +37,7 @@ class QueueDuino
 		void loop();
 
 		// Event Methods
+		void onStart(EventMethod action);
 		void onFailed(EventMethod action);
 		void onSuccess(EventMethod action);
 
@@ -56,10 +57,12 @@ class QueueDuino
 		String filename;
 		ActionMethod action;
 		std::vector<String> queue;
+		std::vector<EventMethod> startEvent;
 		std::vector<EventMethod> failedEvent;
 		std::vector<EventMethod> successEvent;
 
 		// Private methods
+		void fireStart();
 		void fireFailed();
 		void fireSuccess();
 };

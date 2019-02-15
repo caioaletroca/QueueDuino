@@ -20,6 +20,7 @@ run	KEYWORD2
 cancel	KEYWORD2
 setup	KEYWORD2
 loop	KEYWORD2
+onStart	KEYWORD2
 onFailed	KEYWORD2
 onSuccess	KEYWORD2
 setAction	KEYWORD2

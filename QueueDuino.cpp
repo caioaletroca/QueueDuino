@@ -119,6 +119,14 @@ void QueueDuino::loop() {
 }
 
 /**
+ * Register a event on the Start event
+ * @param action [description]
+ */
+void QueueDuino::onStart(EventMethod action) {
+	this->startEvent.push_back(action);
+}
+
+/**
  * Register a event on the Failed event
  * @param action The method to run
  */
@@ -210,6 +218,15 @@ void QueueDuino::load() {
 void QueueDuino::toSerial() {
 	for(int i = 0; i < this->queue.size(); i++) {
 		Serial.println(this->queue[i]);		
+	}
+}
+
+/**
+ * Fires the start Event
+ */
+void QueueDuino::fireStart() {
+	for(int i = 0; i < this->startEvent.size(); i++) {
+		this->startEvent[i]();
 	}
 }
 
