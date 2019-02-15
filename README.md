@@ -79,6 +79,20 @@ void loop()
 
 ## Events
 
+### onStart
+```cpp
+void onStart( [] () -> void {} )
+```
+> Receives a lambda function as argument, or you can also defines a function separated. onStart event is fired when the queue starts
+
+##### Example
+```cpp
+void callback() {
+  // do your stuff
+}
+queue.onStart(callback);
+```
+
 ### onSuccess
 ```cpp
 void onSuccess( [] () -> void {} )
