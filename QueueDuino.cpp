@@ -7,8 +7,6 @@ QueueDuino::QueueDuino() {
 	// Mount file system
 	SPIFFS.begin();
 
-	this->filename = "queue";
-
 	// Starts the system
 	this->setup();
 }
@@ -87,6 +85,9 @@ void QueueDuino::setup() {
 void QueueDuino::loop() {
 	// Run only if is active
 	if(this->active) {
+		// Fire start event
+		this->fireStart();
+
 		while(this->queue.size() > 0) {
 			// Skip loop if the execution is cancelled
 			if(!this->active)

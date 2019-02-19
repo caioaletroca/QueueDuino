@@ -54,7 +54,7 @@ class QueueDuino
 
 	private:
 		bool active = false;
-		String filename;
+		String filename = "queue";
 		ActionMethod action;
 		std::vector<String> queue;
 		std::vector<EventMethod> startEvent;
